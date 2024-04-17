@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image:
+        radial-gradient(circle closest-side,
+            #1d126e,
+            #0b0430);
+    display: flex;
+    /* align-items: center; */
+    padding-top: 150px;
+    /* padding-bottom: 5%; */
+    justify-content: center;
+}
+
+.square-1 {
+    position: relative;
+    height: 430px;
+    width: 430px;
+    border-radius: 50px;
+    transform: rotate(45deg);
+    box-shadow: inset 0 0 25px #020018;
+    background: linear-gradient(to bottom right, #08002d 0%, #180d5b 20%, #180d5b 70%, #0f0644 90%);
+    padding: 20px;
+}
+
+.square-2 {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #070228 0%, #180d5b 20%, #180d5b 70%, #170d56 90%);
+}
+
+.square-3 {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #1d126f;
+    background-color: #1d126e;
+}
+
+.square-4{
+    height: 310px;
+    width: 310px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 25px #050128;
+    background: transparent;
+    position: absolute;
+    z-index: 2;
+}
+
+.pink-square {
+    width: 365px;
+    height: 365px;
+    border: 3px solid #ff1fec;
+    box-shadow: inset 0px 0px 15px #ff1fec,
+    0px 0px 15px #ff1fec;
+    border-radius: 25px;
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    transform: rotate(55deg);
+    z-index: 1;
+    animation: rotation 3s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+.pink-light{
+    position: absolute;
+    top: -5px;
+    left: 158px;
+    width: 15%;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 15px #ff1fec,
+    0px 0px 15px #ff1fec;
+    z-index: 1;
+}
+
+
+.blue-square {
+    width: 365px;
+    height: 365px;
+    border: 3px solid #00e1ff;
+    box-shadow: inset 0px 0px 15px #00e1ff,
+        0px 0px 15px #00e1ff;
+    border-radius: 25px;
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    transform: rotate(-55deg);
+    animation: rotationblue 3s infinite linear;
+}
+@keyframes rotationblue {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-359deg);
+    }
+  }
+.blue-light{
+    position: absolute;
+    width: 20%;
+    height: 7px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 15px #00e1ff,
+    0px 0px 15px #00e1ff;
+}
+
+.blue-light-1{
+    top: -5px;
+    left: 100px;
+    background-color: #00e1ff;
+    /* background-image: radial-gradient(white 0%, white 20%, #00e1ff 20%); */
+}
+.white-circle{
+    position: absolute; 
+    top: -2.7px;
+    left: 130px;
+    width: 10px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.blue-light-2{
+    transform: rotate(90deg);
+    top: 140px;
+    left: -37px;
+    background-color: transparent;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-1 {
+    color: #00e1ff;
+    /* top: 75%;
+    left: 27%; */
+    /* width: 13px;
+    height: 13px; */
+}
+.circle-light{
+    text-shadow: 0px 0px 8px #00e1ff;
+}
+
+.circle-2 {
+    color: #7972b6;
+    /* top: 27%;
+    left: 18%; */
+    /* width: 15px;
+    height: 15px; */
+}
+
+.circle-3 {
+    color: #00e1ff;
+    /* top: 1%;
+    left: 62%; */
+    /* width: 10px;
+    height: 10px; */
+    font-size: 10px;
+}
+
+.x {
+    position: absolute;
+}
+
+.x-1 {
+    /* top: 67%;
+    left: 81%; */
+    color: #ff1fec;
+}
+
+.x-2 {
+    /* top: 105%;
+    left: 48%; */
+    color: #7972b6;
+}
+
+.x-3 {
+    /* top: 4%;
+    left: 16%; */
+    color: #830074;
+    /* text-shadow: 0px 0px 8px red; */
+}
+
+.move-pic {
+    transition: left 1s ease-in-out, top 1s ease-in-out; 
+    z-index: 2;
+  }
+
+
+/* .x-3-light{
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #830074;
+    box-shadow: inset 0px 0px 2px #ff01ea,
+    0px 0px 15px #ff1fec;
+} */
+.x-light{
+    text-shadow: 0px 0px 8px #b0009f;;
+}
+/* .circle-1-light{
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #00e1ff;
+    box-shadow: inset 0px 0px 2px #00e1ff,
+    0px 0px 15px #00e1ff; 
+} */
